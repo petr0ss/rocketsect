@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #2F2E41;
+    --font-color01: #00BFA6;
+    --font-color02: #C2C2C2;
+    --font-color03: #FFFFFF;
+    --font-OpenSans: 'Open Sans' ,sans-serif;
+    --font-JetBrains: 'JetBrains Mono' , sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    height: 100vh;
+}
+
+header{
+    margin: 70px auto 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+ul > li > a{
+    color: var(--font-color03);
+    margin: 0px 60px;
+    text-decoration: none;
+    font-family: var(--font-JetBrains);
+    font-weight: 500;
+}
+
+ul > li > a:hover{
+    opacity: 0.5;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 160px;
+}
+
+.main{
+    width: 605px;
+}
+
+.main > h1{
+    font-family: var(--font-JetBrains);
+    color: var(--font-color03);
+    font-size: 36px;
+    margin: 0px 0px 58px;
+}
+
+.main > h1 > strong{
+    color: var(--font-color01);
+    font-weight: bold;
+}
+
+.main > p{
+    font-family: var(--font-OpenSans);
+    color: var(--font-color02);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.main > p > span{
+    font-weight: bold;
+}
+
+.main > p > strong{
+    color: var(--font-color01);
+}
+
+.line{
+    width: 568px;
+    margin: auto;
+    border: 1px  solid var(--font-color01);
+    margin-bottom: 27px;
+    border-radius: 10px;
+}
+
+footer > p{
+    font-family: var(--font-JetBrains);
+    color: var(--font-color03);
+    font-size: 14px;
+    text-align: center;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: var(--font-color03);
+}
+
+footer > p > a:hover{
+    opacity: 0.5;
+}
+
+.padlock{
+    position: fixed;
+    margin-left: 20px;
+    margin-top: -45px;
+}
